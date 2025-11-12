@@ -1,0 +1,2 @@
+faster-whisper==0.10.0
+googletrans==4.0.0-rc1
