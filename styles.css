@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #ffe1e1, #fff6d8);
+  color: #2d2d2d;
+}
+
+.app {
+  width: min(92vw, 420px);
+  background: #ffffffd9;
+  backdrop-filter: blur(5px);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 32px #d97f7f40;
+}
+
+h1,
+h2 {
+  margin: 0.2rem 0 1rem;
+  text-align: center;
+}
+
+.timer-card {
+  border: 1px solid #ffd8d8;
+  border-radius: 14px;
+  padding: 1rem;
+  text-align: center;
+  background: #fff;
+}
+
+.mode {
+  margin: 0;
+  color: #d24b4b;
+  font-weight: 700;
+}
+
+.time {
+  margin: 0.4rem 0 0.8rem;
+  font-size: 3.2rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 0;
+  background: #ff7a7a;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(0.95);
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.settings {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input {
+  width: 74px;
+  border: 1px solid #ffd0d0;
+  border-radius: 8px;
+  padding: 0.35rem;
+}
+
+#applyBtn {
+  justify-self: center;
+}
+
+.status {
+  margin: 1rem 0 0;
+  text-align: center;
+  color: #7a4747;
+}

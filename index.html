@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>番茄時鐘</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>🍅 番茄時鐘</h1>
+
+    <div class="timer-card">
+      <p id="modeLabel" class="mode">專注時間</p>
+      <p id="timeDisplay" class="time">25:00</p>
+      <div class="controls">
+        <button id="startBtn">開始</button>
+        <button id="pauseBtn" disabled>暫停</button>
+        <button id="resetBtn">重設</button>
+      </div>
+    </div>
+
+    <section class="settings">
+      <h2>設定（分鐘）</h2>
+      <label>
+        專注
+        <input id="workInput" type="number" min="1" max="120" value="25" />
+      </label>
+      <label>
+        休息
+        <input id="breakInput" type="number" min="1" max="60" value="5" />
+      </label>
+      <button id="applyBtn">套用設定</button>
+    </section>
+
+    <p id="statusText" class="status">準備開始今天的專注吧！</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
